@@ -18,6 +18,10 @@ document.querySelector('#recipeForm').addEventListener('submit', (e)=>{
   }).then((result)=>{
     console.log(result.recipeTitle + ': ' + result._id);
     copyToClipboard(client_URL + '?r='+result._id);
+    document.querySelector('#recipeName').value = "";
+    document.querySelector('#ingredients').value = ""
+    document.querySelector('#steps').value = ""
+    alert("URL copied to your clipboard");
   }).catch((error)=>{
         error.text().then(msg =>{
             logErrorMessage(JSON.parse(msg).message);
