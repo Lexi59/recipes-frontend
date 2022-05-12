@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Make Recipe</title>
+  </head>
+  <body>
+    <form data-bitwarden-watching="1" id = 'recipeForm'>
+      <fieldset>
+        <legend>New Recipe</legend>
+        <div class="form-group row">
+          <label for="recipeName">Recipe Name:</label>
+            <input type="text"  style='width:35%' id="recipeName">
+        </div>
+
+        <div class="form-group">
+          <label for="ingredients">Ingredients</label><br>
+          <textarea id="ingredients" rows="15" cols = "100"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="steps">Steps</label><br>
+          <textarea id="steps" rows="15" cols = "100"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </fieldset>
+    </form>
+  <script src='makeRecipe.js'></script>
+  </body>
+</html>

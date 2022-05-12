@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Recipe Home Page</title>
+        <script src="index.js"></script>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <style>
+            pre{
+                font-size: 1.5em;
+                overflow-x: auto;
+                white-space: pre-wrap;
+                white-space: -moz-pre-wrap;
+                white-space: -pre-wrap;
+                white-space: -o-pre-wrap;
+                word-wrap: break-word;
+            }
+            body {
+                font-family: Georgia, serif;
+                width: 70%;
+                margin:auto;
+            }
+            h1 {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1 id = 'recipeTitle'>Welcome!</h1>
+        <p id = 'error'>There has been an error. We are unable to find your recipe!</p>
+        <h2 id = 'ingredHeader'></h2>
+        <pre id="ingredients"></pre>
+        <h2 id = 'stepHeader'></h2>
+        <pre id="steps"></pre>
+    </body>
+</html>
