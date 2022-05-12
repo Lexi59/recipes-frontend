@@ -1,5 +1,5 @@
-const API_URL = "http://localhost:5000/";
-const client_URL = 'http://127.0.0.1:8887/';
+const API_URL = "https://recipes-backend7.herokuapp.com/";
+const client_URL = 'https://lexi59.github.io/recipes-frontend/';
 document.querySelector('#recipeForm').addEventListener('submit', (e)=>{
   e.preventDefault();
   var recipeTitle = document.querySelector('#recipeName').value.trim();
